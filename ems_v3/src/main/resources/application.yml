@@ -1,0 +1,22 @@
+# 配置更改内置Tomcat服务器端口号
+server:
+  port: 9999
+# 设定项目名称，用于计算和定位项目
+spring:
+  application:
+    name: ems_v3
+# 设定转发的前后缀
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+# 配置连输数据库的信息
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+# 设定mybatis映射文件路径
+mybatis:
+  mapper-locations: classpath:/mapper/*.mapper.xml
+  
